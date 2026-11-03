@@ -73,7 +73,7 @@ class ProjectTests(unittest.TestCase):
         with (self.root / "AGENTS.md").open("ab") as stream:
             stream.write(b"\nA later project-specific instruction.\n")
         project.sync(self.root, self.catalog, self.store)
-        self.assertIn("later project-specific", (self.root / "AGENTS.md").read_text())
+        self.assertIn("later project-specific", (self.root / "AGENTS.md").read_text(encoding="utf-8"))
 
     def test_modified_skill_is_never_overwritten(self):
         self.connect()
