@@ -1,0 +1,4 @@
+interface:
+  display_name: "Project Delivery"
+  short_description: "Acceptance criteria, sprint plans and evidence of delivery"
+  default_prompt: "Use $fleet-delivery for the current task and verify the result."

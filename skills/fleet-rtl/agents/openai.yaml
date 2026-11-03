@@ -1,0 +1,4 @@
+interface:
+  display_name: "Persian and RTL Interfaces"
+  short_description: "Persian typography, bidirectional text and UI checks"
+  default_prompt: "Use $fleet-rtl for the current task and verify the result."

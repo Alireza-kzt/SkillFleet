@@ -1,0 +1,4 @@
+interface:
+  display_name: "Engineering Standards"
+  short_description: "Small, readable changes with clear module boundaries"
+  default_prompt: "Use $fleet-engineering for the current task and verify the result."

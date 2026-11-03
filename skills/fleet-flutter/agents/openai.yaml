@@ -1,0 +1,4 @@
+interface:
+  display_name: "Flutter and GetX"
+  short_description: "Focused Flutter features with explicit GetX lifecycles"
+  default_prompt: "Use $fleet-flutter for the current task and verify the result."

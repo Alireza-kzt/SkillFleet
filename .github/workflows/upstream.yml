@@ -1,0 +1,90 @@
+name: Review upstream skill updates
+
+on:
+  schedule:
+    - cron: '35 6 * * 1'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: skillfleet-catalog-update
+  cancel-in-progress: false
+
+jobs:
+  propose:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    permissions:
+      contents: write
+      pull-requests: write
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065 # v5
+        with:
+          python-version: '3.13'
+      - name: Check upstream sources
+        run: python skillfleet.py catalog check --json > upstream-report.json
+      - name: Publish source compare links
+        run: |
+          python - <<'PY'
+          import json, os
+          from pathlib import Path
+          data = json.loads(Path('upstream-report.json').read_text())
+          with open(os.environ['GITHUB_STEP_SUMMARY'], 'a') as stream:
+              stream.write('## Upstream source check\n\n')
+              for row in data['updates']:
+                  state = 'Changed' if row['changed'] else 'Current'
+                  stream.write(f"- {state}: [{row['url'][:-4]}]({row['compare']})\n")
+              stream.write('\nConnected projects keep their existing versions.\n')
+          PY
+      - name: Prepare one draft proposal
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+          BASE_BRANCH: ${{ github.event.repository.default_branch }}
+        run: |
+          set -euo pipefail
+          if ! python -c 'import json; raise SystemExit(0 if any(x["changed"] for x in json.load(open("upstream-report.json"))["updates"]) else 1)'; then
+            exit 0
+          fi
+          existing=$(gh pr list --state open --search 'in:title "Review upstream skill updates"' --json number --jq '.[0].number // empty')
+          if [ -n "$existing" ]; then
+            echo "A review is already pending: #$existing" >> "$GITHUB_STEP_SUMMARY"
+            exit 0
+          fi
+          python skillfleet.py catalog refresh
+          python skillfleet.py catalog validate
+          python -u skillfleet.py catalog audit
+          python -m unittest discover -s tests -v
+          if git diff --quiet -- registry/catalog.lock.json; then
+            exit 0
+          fi
+          branch="skillfleet/catalog-${GITHUB_RUN_ID}-${GITHUB_RUN_ATTEMPT}"
+          git switch -c "$branch"
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add registry/catalog.lock.json
+          git commit -m 'chore: propose reviewed upstream skill versions'
+          git push origin "$branch"
+          python - <<'PY'
+          import json, os
+          from pathlib import Path
+          rows = json.loads(Path('upstream-report.json').read_text())['updates']
+          lines = ['Upstream sources changed. Review the complete compares below before merging.', '',
+                   'Existing projects remain pinned until they explicitly propose and apply an update.', '',
+                   'Validation: catalog schema, complete bundle integrity, and local regression suite passed.', '']
+          lines += [f"- [{row['url'][:-4]}]({row['compare']})" for row in rows if row['changed']]
+          Path(os.environ['RUNNER_TEMP'], 'skillfleet-pr.md').write_text('\n'.join(lines) + '\n')
+          PY
+          gh pr create --base "$BASE_BRANCH" --head "$branch" --draft \
+            --title 'Review upstream skill updates' --body-file "$RUNNER_TEMP/skillfleet-pr.md"
+      - name: Retain update report
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        with:
+          name: upstream-report
+          path: upstream-report.json
+          if-no-files-found: ignore
+          retention-days: 30

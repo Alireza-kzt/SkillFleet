@@ -1,0 +1,4 @@
+interface:
+  display_name: "Video Storytelling"
+  short_description: "Clear storyboards and deterministic Remotion animations"
+  default_prompt: "Use $fleet-video for the current task and verify the result."

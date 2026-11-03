@@ -1,0 +1,4 @@
+interface:
+  display_name: "Context Efficiency"
+  short_description: "Focused retrieval and concise, durable task handoffs"
+  default_prompt: "Use $fleet-context for the current task and verify the result."

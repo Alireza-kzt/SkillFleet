@@ -1,0 +1,4 @@
+interface:
+  display_name: "Research Experiments"
+  short_description: "Reproducible experiments, fair baselines and GPU runs"
+  default_prompt: "Use $fleet-research for the current task and verify the result."

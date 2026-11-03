@@ -1,0 +1,4 @@
+interface:
+  display_name: "Academic Evidence"
+  short_description: "Verified citations, defensible claims and thesis writing"
+  default_prompt: "Use $fleet-academic for the current task and verify the result."

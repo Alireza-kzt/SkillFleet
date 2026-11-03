@@ -1,0 +1,4 @@
+interface:
+  display_name: "Document Production"
+  short_description: "Inspect, render and verify documents and spreadsheets"
+  default_prompt: "Use $fleet-documents for the current task and verify the result."

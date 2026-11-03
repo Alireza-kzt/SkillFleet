@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "skillfleet"
+version = "0.1.0"
+description = "Curated, pinned agent skills across independent projects"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [{name = "SkillFleet contributors"}]
+dependencies = []
+
+[project.scripts]
+skillfleet = "skillfleet.cli:main"
+
+[tool.setuptools]
+packages = ["skillfleet"]

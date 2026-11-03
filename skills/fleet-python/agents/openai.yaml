@@ -1,0 +1,4 @@
+interface:
+  display_name: "Python Services"
+  short_description: "Practical Python and FastAPI boundaries and checks"
+  default_prompt: "Use $fleet-python for the current task and verify the result."
