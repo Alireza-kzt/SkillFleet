@@ -2,7 +2,7 @@
   "schema": 1,
   "skills": {
     "api-and-interface-design": {
-      "commit": "301b02b12bff98e4688e6984af6556802322bbde",
+      "commit": "39b723ceebf81474d0557c1fecd01eddab585563",
       "license": "MIT",
       "license_paths": [
         "LICENSE"
@@ -24,7 +24,7 @@
       "url": "https://github.com/openai/skills.git"
     },
     "caveman": {
-      "commit": "2e068f735253cce28256744804785f01887d9646",
+      "commit": "9b243662ff98d392bc0a95b865a554583d71be75",
       "license": "Apache-2.0 OR MIT",
       "license_paths": [
         "LICENSE",
@@ -37,7 +37,7 @@
       "url": "https://github.com/JuliusBrussee/caveman.git"
     },
     "ci-cd-and-automation": {
-      "commit": "301b02b12bff98e4688e6984af6556802322bbde",
+      "commit": "39b723ceebf81474d0557c1fecd01eddab585563",
       "license": "MIT",
       "license_paths": [
         "LICENSE"
@@ -49,7 +49,7 @@
       "url": "https://github.com/addyosmani/agent-skills.git"
     },
     "code-review": {
-      "commit": "4ae2317ddb22b046e26455e4f9c9b3aaaf62212d",
+      "commit": "5863806dd4e15c63174bee4e7515a4256792ecfa",
       "license": "MIT",
       "license_paths": [
         "LICENSE"
@@ -61,7 +61,7 @@
       "url": "https://github.com/mattpocock/skills.git"
     },
     "code-simplification": {
-      "commit": "301b02b12bff98e4688e6984af6556802322bbde",
+      "commit": "39b723ceebf81474d0557c1fecd01eddab585563",
       "license": "MIT",
       "license_paths": [
         "LICENSE"
@@ -73,7 +73,7 @@
       "url": "https://github.com/addyosmani/agent-skills.git"
     },
     "codebase-design": {
-      "commit": "4ae2317ddb22b046e26455e4f9c9b3aaaf62212d",
+      "commit": "5863806dd4e15c63174bee4e7515a4256792ecfa",
       "license": "MIT",
       "license_paths": [
         "LICENSE"
@@ -85,7 +85,7 @@
       "url": "https://github.com/mattpocock/skills.git"
     },
     "design-taste-frontend": {
-      "commit": "12af471f627f866411b4bd785b19646d3672784c",
+      "commit": "f6b76575f949707b4e3c37cd86cb44b0b98643e8",
       "license": "MIT",
       "license_paths": [
         "LICENSE"
@@ -93,11 +93,11 @@
       "path": "skills/taste-skill",
       "ref": "main",
       "source": "taste",
-      "tree": "844f3cf223d25a29e75f7965d095a093938282df",
+      "tree": "90f92ba7a3ce514cf85a2809583712dbd14106ea",
       "url": "https://github.com/Leonxlnx/taste-skill.git"
     },
     "documentation-and-adrs": {
-      "commit": "301b02b12bff98e4688e6984af6556802322bbde",
+      "commit": "39b723ceebf81474d0557c1fecd01eddab585563",
       "license": "MIT",
       "license_paths": [
         "LICENSE"
@@ -105,11 +105,11 @@
       "path": "skills/documentation-and-adrs",
       "ref": "main",
       "source": "addy-osmani",
-      "tree": "011bbe7d0bc4576a03795dada8c1c48ee322cd1b",
+      "tree": "09b6d9f338a00bdecfc62ba7cad3221c41b48560",
       "url": "https://github.com/addyosmani/agent-skills.git"
     },
     "domain-modeling": {
-      "commit": "4ae2317ddb22b046e26455e4f9c9b3aaaf62212d",
+      "commit": "5863806dd4e15c63174bee4e7515a4256792ecfa",
       "license": "MIT",
       "license_paths": [
         "LICENSE"
@@ -121,7 +121,7 @@
       "url": "https://github.com/mattpocock/skills.git"
     },
     "durable-objects": {
-      "commit": "1f2cd0a19588e2c6197c91dd7c71729df1fb6156",
+      "commit": "cbf893b954222276bf1af57e5f23379231e0efb9",
       "license": "Apache-2.0",
       "license_paths": [
         "LICENSE"
@@ -203,7 +203,7 @@
       "url": "https://github.com/openai/skills.git"
     },
     "internal-comms": {
-      "commit": "ca45fc496a3436251f191354091d557da31c15b5",
+      "commit": "e4bb5d960d87126ff3b3a8af1a104b7db67560ba",
       "license": "Apache-2.0",
       "license_paths": [],
       "path": "skills/internal-comms",
@@ -223,7 +223,7 @@
       "url": "https://github.com/openai/skills.git"
     },
     "literature-review": {
-      "commit": "a25cf9ec00e2745d03f8704acf6f6919694ccd9a",
+      "commit": "ec59a29a03d5c40f73ab40878df04860bc00e876",
       "license": "MIT",
       "license_paths": [
         "LICENSE.md"
@@ -235,7 +235,7 @@
       "url": "https://github.com/K-Dense-AI/scientific-agent-skills.git"
     },
     "matplotlib": {
-      "commit": "a25cf9ec00e2745d03f8704acf6f6919694ccd9a",
+      "commit": "ec59a29a03d5c40f73ab40878df04860bc00e876",
       "license": "MIT",
       "license_paths": [
         "LICENSE.md"
@@ -247,7 +247,7 @@
       "url": "https://github.com/K-Dense-AI/scientific-agent-skills.git"
     },
     "mcp-builder": {
-      "commit": "ca45fc496a3436251f191354091d557da31c15b5",
+      "commit": "e4bb5d960d87126ff3b3a8af1a104b7db67560ba",
       "license": "Apache-2.0",
       "license_paths": [],
       "path": "skills/mcp-builder",
@@ -257,7 +257,7 @@
       "url": "https://github.com/anthropics/skills.git"
     },
     "nextjs-on-cloudflare": {
-      "commit": "1f2cd0a19588e2c6197c91dd7c71729df1fb6156",
+      "commit": "cbf893b954222276bf1af57e5f23379231e0efb9",
       "license": "Apache-2.0",
       "license_paths": [
         "LICENSE"
@@ -279,7 +279,7 @@
       "url": "https://github.com/openai/skills.git"
     },
     "performance-optimization": {
-      "commit": "301b02b12bff98e4688e6984af6556802322bbde",
+      "commit": "39b723ceebf81474d0557c1fecd01eddab585563",
       "license": "MIT",
       "license_paths": [
         "LICENSE"
@@ -291,7 +291,7 @@
       "url": "https://github.com/addyosmani/agent-skills.git"
     },
     "planning-and-task-breakdown": {
-      "commit": "301b02b12bff98e4688e6984af6556802322bbde",
+      "commit": "39b723ceebf81474d0557c1fecd01eddab585563",
       "license": "MIT",
       "license_paths": [
         "LICENSE"
@@ -299,11 +299,11 @@
       "path": "skills/planning-and-task-breakdown",
       "ref": "main",
       "source": "addy-osmani",
-      "tree": "3045f95a156dc71d7b5ac1e29ce795bb5cac2b71",
+      "tree": "7a1798a5f848a910c2e29a76cda8374a57b8de0a",
       "url": "https://github.com/addyosmani/agent-skills.git"
     },
     "planning-with-files": {
-      "commit": "0fa6c79885e14534074cb7df8535e1efa3dc7149",
+      "commit": "51bf62def62d1cb317d37936929b4ef97cf862c3",
       "license": "MIT",
       "license_paths": [
         "LICENSE"
@@ -311,7 +311,7 @@
       "path": ".agents/skills/planning-with-files",
       "ref": "master",
       "source": "planning",
-      "tree": "f4f40576be41123b48099ad91c72eab3f64d8f9f",
+      "tree": "ee1007d9fa50ad11ccc0d6324ed04325364d43e0",
       "url": "https://github.com/OthmanAdi/planning-with-files.git"
     },
     "playwright": {
@@ -337,7 +337,7 @@
       "url": "https://github.com/DietrichGebert/ponytail.git"
     },
     "pytorch-lightning": {
-      "commit": "a25cf9ec00e2745d03f8704acf6f6919694ccd9a",
+      "commit": "ec59a29a03d5c40f73ab40878df04860bc00e876",
       "license": "MIT",
       "license_paths": [
         "LICENSE.md"
@@ -349,7 +349,7 @@
       "url": "https://github.com/K-Dense-AI/scientific-agent-skills.git"
     },
     "scientific-writing": {
-      "commit": "a25cf9ec00e2745d03f8704acf6f6919694ccd9a",
+      "commit": "ec59a29a03d5c40f73ab40878df04860bc00e876",
       "license": "MIT",
       "license_paths": [
         "LICENSE.md"
@@ -361,7 +361,7 @@
       "url": "https://github.com/K-Dense-AI/scientific-agent-skills.git"
     },
     "scikit-learn": {
-      "commit": "a25cf9ec00e2745d03f8704acf6f6919694ccd9a",
+      "commit": "ec59a29a03d5c40f73ab40878df04860bc00e876",
       "license": "MIT",
       "license_paths": [
         "LICENSE.md"
@@ -373,7 +373,7 @@
       "url": "https://github.com/K-Dense-AI/scientific-agent-skills.git"
     },
     "security-and-hardening": {
-      "commit": "301b02b12bff98e4688e6984af6556802322bbde",
+      "commit": "39b723ceebf81474d0557c1fecd01eddab585563",
       "license": "MIT",
       "license_paths": [
         "LICENSE"
@@ -381,7 +381,7 @@
       "path": "skills/security-and-hardening",
       "ref": "main",
       "source": "addy-osmani",
-      "tree": "9fb34870625f80d5cac82625f388c0d81d3b525a",
+      "tree": "165116cd1e9e99c64e4015f7257bdd130545e244",
       "url": "https://github.com/addyosmani/agent-skills.git"
     },
     "security-best-practices": {
@@ -405,7 +405,7 @@
       "url": "https://github.com/openai/skills.git"
     },
     "spec-driven-development": {
-      "commit": "301b02b12bff98e4688e6984af6556802322bbde",
+      "commit": "39b723ceebf81474d0557c1fecd01eddab585563",
       "license": "MIT",
       "license_paths": [
         "LICENSE"
@@ -413,11 +413,11 @@
       "path": "skills/spec-driven-development",
       "ref": "main",
       "source": "addy-osmani",
-      "tree": "857f385f3e91cf22fc7588116fc22aed72476efe",
+      "tree": "1f813b40ec5cb162db551fb81e5b8e7d758956b9",
       "url": "https://github.com/addyosmani/agent-skills.git"
     },
     "statistical-analysis": {
-      "commit": "a25cf9ec00e2745d03f8704acf6f6919694ccd9a",
+      "commit": "ec59a29a03d5c40f73ab40878df04860bc00e876",
       "license": "MIT",
       "license_paths": [
         "LICENSE.md"
@@ -429,7 +429,7 @@
       "url": "https://github.com/K-Dense-AI/scientific-agent-skills.git"
     },
     "systematic-debugging": {
-      "commit": "2ce8aa15d05bd57213e6f746f953aafb7ded7a8b",
+      "commit": "22f0b463e7a5e579904dd6211a520321035526f7",
       "license": "MIT",
       "license_paths": [
         "LICENSE"
@@ -437,11 +437,11 @@
       "path": "skills/systematic-debugging",
       "ref": "main",
       "source": "superpowers",
-      "tree": "108961c080a6837ad8a188a553e593cc5e6df62d",
+      "tree": "774f23e27e35cb0a89ede39156e7b079fbb84190",
       "url": "https://github.com/obra/superpowers.git"
     },
     "test-driven-development": {
-      "commit": "2ce8aa15d05bd57213e6f746f953aafb7ded7a8b",
+      "commit": "22f0b463e7a5e579904dd6211a520321035526f7",
       "license": "MIT",
       "license_paths": [
         "LICENSE"
@@ -453,7 +453,7 @@
       "url": "https://github.com/obra/superpowers.git"
     },
     "ui-ux-pro-max": {
-      "commit": "713eef51b04efc98d6fa565323b495f7c9c89fd4",
+      "commit": "e59ff376a41f7ca47b7541ad5c116495cbade3ee",
       "license": "MIT",
       "license_paths": [
         "LICENSE"
@@ -461,7 +461,7 @@
       "path": ".claude/skills/ui-ux-pro-max",
       "ref": "main",
       "source": "ui-ux",
-      "tree": "e421a9fda8e43f1a8dd7f42cbc655e5bca93ee8c",
+      "tree": "b6f08c13f95a4854694f41113e0b4935c741deb1",
       "url": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill.git"
     },
     "vercel-composition-patterns": {
@@ -485,7 +485,7 @@
       "url": "https://github.com/vercel-labs/agent-skills.git"
     },
     "verification-before-completion": {
-      "commit": "2ce8aa15d05bd57213e6f746f953aafb7ded7a8b",
+      "commit": "22f0b463e7a5e579904dd6211a520321035526f7",
       "license": "MIT",
       "license_paths": [
         "LICENSE"
@@ -507,7 +507,7 @@
       "url": "https://github.com/vercel-labs/agent-skills.git"
     },
     "workers-best-practices": {
-      "commit": "1f2cd0a19588e2c6197c91dd7c71729df1fb6156",
+      "commit": "cbf893b954222276bf1af57e5f23379231e0efb9",
       "license": "Apache-2.0",
       "license_paths": [
         "LICENSE"
@@ -515,11 +515,11 @@
       "path": "skills/workers-best-practices",
       "ref": "main",
       "source": "cloudflare",
-      "tree": "302f7f55037fe9396dfcd961d8877d020391104c",
+      "tree": "82b367b39fd2b7fe77bd2859bd09b3cff80907c9",
       "url": "https://github.com/cloudflare/skills.git"
     },
     "wrangler": {
-      "commit": "1f2cd0a19588e2c6197c91dd7c71729df1fb6156",
+      "commit": "cbf893b954222276bf1af57e5f23379231e0efb9",
       "license": "Apache-2.0",
       "license_paths": [
         "LICENSE"
@@ -533,27 +533,27 @@
   },
   "sources": {
     "addy-osmani": {
-      "commit": "301b02b12bff98e4688e6984af6556802322bbde",
+      "commit": "39b723ceebf81474d0557c1fecd01eddab585563",
       "ref": "main",
       "url": "https://github.com/addyosmani/agent-skills.git"
     },
     "anthropic": {
-      "commit": "ca45fc496a3436251f191354091d557da31c15b5",
+      "commit": "e4bb5d960d87126ff3b3a8af1a104b7db67560ba",
       "ref": "main",
       "url": "https://github.com/anthropics/skills.git"
     },
     "caveman": {
-      "commit": "2e068f735253cce28256744804785f01887d9646",
+      "commit": "9b243662ff98d392bc0a95b865a554583d71be75",
       "ref": "main",
       "url": "https://github.com/JuliusBrussee/caveman.git"
     },
     "cloudflare": {
-      "commit": "1f2cd0a19588e2c6197c91dd7c71729df1fb6156",
+      "commit": "cbf893b954222276bf1af57e5f23379231e0efb9",
       "ref": "main",
       "url": "https://github.com/cloudflare/skills.git"
     },
     "matt-pocock": {
-      "commit": "4ae2317ddb22b046e26455e4f9c9b3aaaf62212d",
+      "commit": "5863806dd4e15c63174bee4e7515a4256792ecfa",
       "ref": "main",
       "url": "https://github.com/mattpocock/skills.git"
     },
@@ -563,7 +563,7 @@
       "url": "https://github.com/openai/skills.git"
     },
     "planning": {
-      "commit": "0fa6c79885e14534074cb7df8535e1efa3dc7149",
+      "commit": "51bf62def62d1cb317d37936929b4ef97cf862c3",
       "ref": "master",
       "url": "https://github.com/OthmanAdi/planning-with-files.git"
     },
@@ -573,22 +573,22 @@
       "url": "https://github.com/DietrichGebert/ponytail.git"
     },
     "scientific": {
-      "commit": "a25cf9ec00e2745d03f8704acf6f6919694ccd9a",
+      "commit": "ec59a29a03d5c40f73ab40878df04860bc00e876",
       "ref": "main",
       "url": "https://github.com/K-Dense-AI/scientific-agent-skills.git"
     },
     "superpowers": {
-      "commit": "2ce8aa15d05bd57213e6f746f953aafb7ded7a8b",
+      "commit": "22f0b463e7a5e579904dd6211a520321035526f7",
       "ref": "main",
       "url": "https://github.com/obra/superpowers.git"
     },
     "taste": {
-      "commit": "12af471f627f866411b4bd785b19646d3672784c",
+      "commit": "f6b76575f949707b4e3c37cd86cb44b0b98643e8",
       "ref": "main",
       "url": "https://github.com/Leonxlnx/taste-skill.git"
     },
     "ui-ux": {
-      "commit": "713eef51b04efc98d6fa565323b495f7c9c89fd4",
+      "commit": "e59ff376a41f7ca47b7541ad5c116495cbade3ee",
       "ref": "main",
       "url": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill.git"
     },
